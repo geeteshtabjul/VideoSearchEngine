@@ -1,0 +1,39 @@
+.video_item {
+  width: 100%;
+  height: 75px;
+  padding-bottom: 20px;
+  position: relative;
+  float: left;
+}
+.video_item_img_div {
+  height: 65px;
+}
+.video_item_source {
+  height: 100%;
+  float:left;
+}
+.video_item_title {
+  left: 5px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.video_item_tags {
+  left: 5px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.video_item_content_div {
+  width: 100%;
+  position: relative;
+  left: 5px;
+}
+.video_item_view_count {
+  float: left;
+}
+.video_item_channel_title {
+  float:right;
+}

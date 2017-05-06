@@ -1,0 +1,43 @@
+.video_may_like_list {
+  width: 270px;
+  height: 75px;
+  top: 5px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+.video_may_like_img_div {
+  height: 55px;
+  width: 250px;
+}
+
+.video_may_like_source {
+  height: 100%;
+  float:left;
+}
+.video_may_like_title {
+  left: 5px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.video_may_like_tags {
+  left: 5px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.video_may_like_content_div {
+  width: 100%;
+  position: relative;
+  left: 5px;
+}
+.video_may_like_view_count {
+  float: left;
+}
+.video_may_like_channel_title {
+  float:right;
+}

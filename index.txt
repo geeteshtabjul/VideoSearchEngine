@@ -1,0 +1,42 @@
+MONGODB INDEX DETAILS
+
+VideoIdIndex
+db.YoutubeVideos.createIndex(
+  {
+    "videoInfo.id" : 1
+  },
+  {
+    name: "VideoIdIndex"
+  }
+)
+
+VideoTextIndex
+db.YoutubeVideos.createIndex(
+   {
+     "videoInfo.snippet.tags": "text",
+     "videoInfo.snippet.title": "text",
+     "videoInfo.snippet.description": "text",
+     "videoInfo.snippet.channelTitle": "text"
+   },
+   {
+     weights: {
+       "videoInfo.snippet.tags": 8,
+       "videoInfo.snippet.title": 10,
+       "videoInfo.snippet.description": 5,
+       "videoInfo.snippet.channelTitle": 2
+     },
+     default_language: "english",
+     name: "VideoTextIndex"
+   }
+ )
+
+Search Query: db.YoutubeVideos.find( { $text: { $search: "india" } } )
+db.YoutubeVideos.find( { $text: { $search: "india" } }, { score: { $meta: "textScore" } } ).sort( { score: { $meta: "textScore" } } )
+Stats: .explain("executionStats")
+
+DETAILS OF THE INDEX
+ - case insensitivity
+ - removes punctuation marks automatically and indexes accordingly
+ - removes basic stop words (the, is, etc.)
+ - assumed the fields would be in english
+ - localized fields index?? [https://docs.mongodb.com/manual/tutorial/specify-language-for-text-index/]

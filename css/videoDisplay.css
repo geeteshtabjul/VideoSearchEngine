@@ -1,0 +1,55 @@
+.video_display_img {
+  width: 100%;
+  top: 0px;
+}
+
+.video_display_title {
+  font-size: 23px;
+  position: relative;
+}
+
+.video_display_1 {
+  width: 100%;
+  float: left;
+  height: inherit;
+  position: relative;
+}
+
+.pad {
+  padding-top: 7px;
+}
+
+.video_display_pubAt {
+  float: left;
+}
+
+.video_display_viewC_favC {
+  float: right;
+}
+
+.video_display_2 {
+  float: left;
+  height: inherit;
+  width: 100%;
+  position: relative;
+}
+
+.video_display_channelTitle {
+  float: left;
+}
+
+.video_display_likeC_dislikeC_commentC {
+  float:right;
+}
+
+.icon {
+  background-image: url(icon/thumb_up.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 16px; /* Or size of icon + spacing */
+}
+
+.video_display_description_title {
+  font-size: 20px;
+}

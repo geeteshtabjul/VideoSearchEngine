@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../icons/material-design-icons/iconfont/MaterialIcons-Regular.eot"); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url("../icons/material-design-icons/iconfont/MaterialIcons-Regular.woff2") format('woff2'),
+    url("../icons/material-design-icons/iconfont/MaterialIcons-Regular.woff") format('woff'),
+    url("../icons/material-design-icons/iconfont/MaterialIcons-Regular.ttf") format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+body {
+  width: 100%;
+  font-family: Helvetica;
+  background: #eee;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+#video_may_like {
+  position: absolute;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  float:left;
+  top: 130px;
+  overflow: hidden;
+  height: 100px;
+  margin: auto;
+}
+
+#video_display {
+  position: absolute;
+  padding-right: 20px;
+  width: 53%;
+  height: auto;
+  top: 245px;
+  bottom: 0;
+  left:7%;
+  float:left;
+  margin: auto;
+}
+
+#video_result {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 245px;
+  bottom: 0;
+  right:9%;
+  float:right;
+  margin: auto;
+}
+
+#search_result_item {
+  font-size: 15px;
+}
